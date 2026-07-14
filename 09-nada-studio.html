@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nada Studio — Sekolah Musik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#3B1F3B; --panel:#4A2A4A; --gold:#E8B86D; --cream:#F7F1E8; --serif:'Fraunces',serif; --sans:'Inter',sans-serif;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg); color:var(--cream); font-family:var(--sans);}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 32px;}
+  nav{display:flex; justify-content:space-between; align-items:center; padding:26px 32px;}
+  .logo{font-family:var(--serif); font-weight:700; font-size:22px;}
+  .logo span{color:var(--gold);}
+  nav ul{list-style:none; display:flex; gap:28px; font-size:14px; opacity:0.85;}
+  .btn{background:var(--gold); color:var(--bg); font-weight:600; padding:12px 26px; border-radius:30px; text-decoration:none; font-size:14px;}
+  .hero{text-align:center; padding:80px 32px 30px; position:relative;}
+  .eyebrow{font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:20px;}
+  h1{font-family:var(--serif); font-weight:700; font-size:clamp(38px,6.5vw,74px); line-height:1.1;}
+  .hero p{max-width:480px; margin:24px auto 0; font-size:16px; color:rgba(247,241,232,0.75);}
+  .wave{display:flex; align-items:flex-end; justify-content:center; gap:5px; height:80px; margin:50px auto 0;}
+  .wave span{width:5px; background:var(--gold); border-radius:3px; opacity:0.7;}
+  section{padding:80px 32px;}
+  .sectitle{font-family:var(--serif); font-weight:700; font-size:clamp(28px,4vw,42px); margin-bottom:44px; text-align:center;}
+  .courses{background:var(--panel);}
+  .grid4{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; max-width:1080px; margin:0 auto;}
+  .ccard{background:var(--bg); border-radius:14px; padding:26px 22px; text-align:center;}
+  .ccard .icon{font-size:30px; margin-bottom:14px;}
+  .ccard h3{font-family:var(--serif); font-size:19px; margin-bottom:8px;}
+  .ccard p{font-size:13px; color:rgba(247,241,232,0.6);}
+  .teachers{display:grid; grid-template-columns:repeat(3,1fr); gap:30px; max-width:1000px; margin:0 auto; text-align:center;}
+  .tcard .photo{width:100px; height:100px; border-radius:50%; background:linear-gradient(160deg, var(--gold), var(--panel)); margin:0 auto 18px;}
+  .tcard h4{font-family:var(--serif); font-size:20px;}
+  .tcard span{font-size:13px; color:var(--gold);}
+  .cta-final{text-align:center; padding:110px 32px;}
+  .cta-final h2{font-family:var(--serif); font-weight:700; font-size:clamp(30px,5vw,52px); margin-bottom:28px;}
+  footer{padding:36px 32px; border-top:1px solid rgba(247,241,232,0.1); font-size:13px; color:rgba(247,241,232,0.5); display:flex; justify-content:space-between;}
+  @media(max-width:860px){.grid4{grid-template-columns:1fr 1fr;} .teachers{grid-template-columns:1fr;} nav ul{display:none;}}
+</style>
+</head>
+<body>
+<nav class="wrap">
+  <div class="logo">Nada<span>Studio</span></div>
+  <ul><li>Kelas</li><li>Pengajar</li><li>Jadwal</li></ul>
+  <a href="#" class="btn">Coba Kelas</a>
+</nav>
+
+<section class="hero wrap">
+  <div class="eyebrow">Sekolah Musik — Segala Usia</div>
+  <h1>Setiap orang punya nada.<br>Kami bantu menemukannya.</h1>
+  <p>Kelas privat dan grup untuk piano, gitar, vokal, dan drum. Metode belajar disesuaikan dengan usia dan tujuan, dari sekadar hobi sampai persiapan panggung.</p>
+  <div class="wave" id="wave"></div>
+</section>
+
+<section class="courses">
+  <div class="wrap">
+    <div class="sectitle">Instrumen yang Kami Ajarkan</div>
+    <div class="grid4">
+      <div class="ccard"><div class="icon">🎹</div><h3>Piano</h3><p>Klasik hingga pop, mulai usia 5 tahun.</p></div>
+      <div class="ccard"><div class="icon">🎸</div><h3>Gitar</h3><p>Akustik dan elektrik, untuk pemula sampai mahir.</p></div>
+      <div class="ccard"><div class="icon">🎤</div><h3>Vokal</h3><p>Teknik pernapasan, pitch, dan penguasaan panggung.</p></div>
+      <div class="ccard"><div class="icon">🥁</div><h3>Drum</h3><p>Ritme dasar hingga pola kompleks untuk band.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sectitle">Pengajar Kami</div>
+    <div class="teachers">
+      <div class="tcard"><div class="photo"></div><h4>Kak Rani</h4><span>Piano &amp; Vokal, 10 tahun mengajar</span></div>
+      <div class="tcard"><div class="photo"></div><h4>Kak Dimas</h4><span>Gitar, alumni ISI Padang Panjang</span></div>
+      <div class="tcard"><div class="photo"></div><h4>Kak Fira</h4><span>Drum &amp; Perkusi, mantan drummer band tur</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final wrap">
+  <h2>Kelas percobaan pertama,<br>gratis tanpa syarat.</h2>
+  <a href="#" class="btn" style="padding:15px 30px;">Daftar Kelas Percobaan</a>
+</section>
+
+<footer class="wrap"><span>© 2026 Nada Studio</span><span>Pekanbaru, Indonesia</span></footer>
+
+<script>
+  const wave=document.getElementById('wave');
+  for(let i=0;i<40;i++){
+    const bar=document.createElement('span');
+    const h=20+Math.sin(i*0.5)*25+Math.random()*15;
+    bar.style.height=h+'px';
+    wave.appendChild(bar);
+  }
+</script>
+</body>
+</html>
